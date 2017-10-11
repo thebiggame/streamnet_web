@@ -8,15 +8,15 @@
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "jquery": "^3.2.1",
-    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir": "^6.0.0-16",
     "laravel-elixir-webpack-official": "^1.0.2",
-    "popper.js": "^1.12.3",
+    "popper.js": "^1.12.5",
     "require-dir": "^0.3.2",
     "tether": "^1.4.0",
-    "video.js": "^6.2.6",
-    "videojs-contrib-dash": "^2.9.1",
-    "videojs-contrib-hls": "^5.9.0",
+    "video.js": "^6.3.3",
+    "videojs-contrib-dash": "^2.9.2",
+    "videojs-contrib-hls": "^5.11.1",
     "videojs-flash": "^2.0.1",
-    "webworkify-webpack": "^2.0.5"
+    "webworkify-webpack": "^2.0.6"
   }
 }

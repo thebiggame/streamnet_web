@@ -15,6 +15,8 @@ RUN apt-get update \
     && apt-get install -y \
     nodejs \
     libmcrypt-dev \
+    libfreetype6 libjpeg-dev libfreetype6-dev libpng-dev \
+    libxrender1 \
     wget \
     git \
     nginx \

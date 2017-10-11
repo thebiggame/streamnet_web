@@ -1,0 +1,23 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+.site-wrapper {
+    padding-bottom: 45px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: grey;
+    font-size: 10px;
+    text-align: right;
+    padding: 8px;
+}
+
+#containingBlock {
+    width: 50%;
+}
+
+.internatext { font-family: 'Comfortaa', cursive; font-size: 100px; }

@@ -1,0 +1,54 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+// VideoJS
+@import "node_modules/video.js/dist/video-js";
+
+@fa-font-path: "../assets/fonts";
+
+html {
+    position: relative;
+}
+body {
+    padding-bottom: 56px;
+    height: 100vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: grey;
+    font-size: 10px;
+    text-align: right;
+    padding: 8px;
+}
+
+.streamnet-font {
+  font-family: 'Raleway', sans-serif;
+}
+.interna-font {
+  font-family: 'Raleway', sans-serif;
+}
+.site-wrapper {
+    height: 100%;
+}
+.videoWrapper {
+    height: 100%;
+    width: 100%;
+}
+.video-js {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-text {
+    padding-right: 2vh;
+}

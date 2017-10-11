@@ -68,7 +68,7 @@ WORKDIR /var/www
 COPY ./database /var/www/database
 
 RUN /usr/bin/composer install --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader \
-    && npm install -g gulp
+    && npm install -g gulp \
     && npm install --production
 
 COPY . /var/www/

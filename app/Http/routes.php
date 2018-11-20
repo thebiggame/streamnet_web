@@ -37,5 +37,5 @@ Route::get('/interna', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('/music', 'MusicController@getIndex');
 });

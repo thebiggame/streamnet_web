@@ -10,6 +10,7 @@ ENV PATH="$PATH:/var/www/vendor/bin"
 
 RUN apt-get update \
     && apt-get install -y \
+    gnupg2 \
     curl \
     && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && apt-get install -y \
@@ -21,17 +22,19 @@ RUN apt-get update \
     git \
     nginx \
     supervisor \
-    zip unzip
+    zip \
+    unzip
 
 # notes:
 #  NPROC is done so we build PHP extensions with all available cores, dramatically reducing compile time (especially for gd)
 #  we grab prestissimo because it multi-threads composer downloads basically for free
+#  Apparently mcrypt is no longer supported so has to be enabled manually
 
-RUN NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
-    && docker-php-ext-install -j${NPROC} \
+RUN pecl install mcrypt-1.0.2 \
+    docker-php-ext-enable mcrypt \
+    && docker-php-ext-install -j$(nproc) \
     bcmath \
     gd \
-    mcrypt \
     mbstring \
     mysqli \
     pdo_mysql \
